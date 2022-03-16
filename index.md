@@ -13,6 +13,8 @@ A short summary of my inspiration for the meme is that I am an Army(BTS stan), I
 a lot of their videos and it's always hilarious. I found a picture that shows them basically being goofy and thought why not make it into a meme. 
 
 Below attached is the R code I used to make the meme! Hope you guys like it!
+
+```
 comedian <- image_read("https://i.guim.co.uk/img/media/243076ac810cfe6320445c064c7823bee4bddaf0/0_9_1654_992/master/1654.jpg?width=1200&quality=85&auto=format&fit=max&s=9b03448172aaf9d993fcb2a45312b05d")%>%
   image_scale(500)
 
@@ -47,5 +49,5 @@ meme <- c(first_row, second_row) %>%
   image_append(stack = TRUE)
 
 image_write(meme, "my_meme.png")
-
+```
 
